@@ -5,7 +5,7 @@
 
 // if it was in a subfolder you use require('./subFolder/logger);
 
-
+logger.log('Treek keep moving forward');
 
 console.log(module);
 
