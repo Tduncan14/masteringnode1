@@ -1,13 +1,9 @@
-// to load logger module use the require built with node
- var logger =require('./logger.js');
- console.log(logger);
-//or you can make it shorter require('./logger');
+const os = require('os');
 
-// if it was in a subfolder you use require('./subFolder/logger);
+var totalMemory = os.totalmem();
+var freeMemory = os.freemem();
 
-logger.log('Treek keep moving forward');
+console.log('total :' + totalyMemory);
 
-console.log(module);
-
-// in node every file is module that needed to export the variables and files found in this module is only in the scope of this module
-//creating 
+// a Template string
+// ES6 / ES2015 : ECMAScript 6
