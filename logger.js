@@ -11,6 +11,8 @@ function log(message){
    
 // exports the function out of the module
 module.exports.log = log;
+// can also be call my module.exports.myfunction =log;
 
 // you can also export the variable outside of the moduel
+//this can be called module.exports.endpoint =url;
 module.exports.url = url;
