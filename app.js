@@ -4,12 +4,12 @@ const EventEmitter = require('events');
 const emitter = new EventEmitter();
 
 //Register a listner
-emitter.on('wow3', function(){
- console.log('Treek keep moving forward');
+emitter.on('wow3', function(arg){
+ console.log('Treek keep moving forward', arg);
 });
 
 
 // Raise an event.
-emitter.emit('wow3');
+emitter.emit('wow3',{id:1, url:'http://'});
 
 // Emit making a noise, or produce something. signalling something happened/
