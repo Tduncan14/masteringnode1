@@ -1,11 +1,7 @@
-const os = require('os');
+// grabbing the module and using it
+// now i am able to use the methods
+const fs= fileSystem = require('fs');
 
-var totalMemory = os.totalmem();
-var freeMemory = os.freemem();
+const files =fs.readdirSync('./');
 
-//console.log('total :' + totalMemory);
-
-// a Template string
-// ES6 / ES2015 : ECMAScript 6
-console.log(`Total Memory:${totalMemory}`);
-console.log(`Total Memory:${freeMemory}`);
+console.log(files);
