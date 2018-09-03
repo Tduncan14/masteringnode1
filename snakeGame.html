@@ -4,7 +4,7 @@
 <title> snake game </title>
 </head>
 <body>
-<canvas id ="gc" width ="500" height ="500"> </canvas>
+<canvas id ="gc" width ="400" height ="400"> </canvas>
 <script>
 // creating a function that loads when page is loaded
 window.onload =function(){
@@ -18,12 +18,21 @@ setInterval(game,1000/15);
 }
 // player position
 px=py=10;
+// grid size
+gs = tc = 20;
+// wtf just type
+ax = ay = 15;
 // frame rates
 xv=yv =0;
 
 // create a function for the game
 
 function game(){
+px+=xv;
+py+=yv;
+if(px<0){
+    
+}
 
 }
 // the parameter is actually etv
