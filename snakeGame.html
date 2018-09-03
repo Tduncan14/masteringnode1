@@ -16,6 +16,8 @@ document.addEventListener("keydown",keyPush);
 //1 second divided by 15
 setInterval(game,1000/15);
 }
+// player position
+px=py=10;
 // frame rates
 xv=yv =0;
 
@@ -26,6 +28,7 @@ function game(){
 }
 // the parameter is actually etv
 function keyPush(e){
+    // arrow on the keyboard goes clockwise
     switch(e.keyCode){
         case 37:
         xv=-1;yv=0;
