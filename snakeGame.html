@@ -37,7 +37,12 @@ if(px<0){
 if(px>tc-1){
     px=0;
 }
-
+if(py<0){
+    py=tc-1;
+}
+if(py>tc-1){
+    py =0;
+}
 }
 // the parameter is actually etv
 function keyPush(e){
