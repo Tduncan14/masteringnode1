@@ -28,10 +28,14 @@ xv=yv =0;
 // create a function for the game
 
 function game(){
+//calling out the switches
 px+=xv;
 py+=yv;
 if(px<0){
-    
+    px= tc -1;
+}
+if(px>tc-1){
+    px=0;
 }
 
 }
