@@ -1,4 +1,7 @@
 // timer to open file and read contents to http resposne
+var fs = require("fs");
+var file = require("setTimer.js");
+var practiceExports;
 
 function on_OpenAndReadFile(filename,res){
     console.log('opening ' + filename);
@@ -17,4 +20,9 @@ function on_OpenAndReadFile(filename,res){
     res.end();
 }
 
-setTimeout(openAndReadFile,2000, filename, res);
+var openAndReadFile ="This me just passing somehtin"
+
+
+setTimeout(openAndReadFile,2000, practiceExports, res);
+
+
