@@ -10,6 +10,13 @@ var server = net.createServer(function(conn){
     console.log(connected);
     // when it is connected pass in data
     conn.on('close', function(data){
-        console.log(data + ' from ' + conn.remoteAddress+ ' ')
+        console.log(data + ' from ' + conn.remoteAddress+ ' ' + conn.remotePort);
+        // writing out the connection for us
+        conn.write('Repeating: ' + data);
     });
-})
+    conn.on('close', function(){
+        console.log('client closed connection');
+    });
+}).listen(8000);
+
+console.log('listening to port 8000');
