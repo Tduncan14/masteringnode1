@@ -18,7 +18,7 @@ function closeInterface(){
 }
 // Listen for .leave
 interface.on('line', function(cmd){
-    if(cmd.trim == '.leave'){
+    if(cmd.trim() == '.leave'){
         closeInterface();
         return; }
         else{
