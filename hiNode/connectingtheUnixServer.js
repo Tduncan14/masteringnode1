@@ -24,3 +24,6 @@ req.on('error', function (e){
 });
 
 // write data to request body
+req.write('data\n');
+req.write('data\n');
+req.end();

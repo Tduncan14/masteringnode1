@@ -1,0 +1,46 @@
+// getting the http module and file system module
+var http = require('http');
+var fs = require ('fs');
+
+// write out the numbers
+
+function writeNumber(res){
+    var counter = 0;
+    // incrment the gcounter , and write the calendar
+
+    for(var i = 0 ;  i <100 ; i++) {
+        counter ++;
+        res.write(counter.toString()'\n');
+    }
+}
+// creates the server
+http.createServer(function(req,res){
+    var query = require('url). parse(req.url).query;
+    "var app = require('querystring').parse( query).file + " .text"
+
+    // content header
+    res.writeHead(200, {'Content-Type' : 'text/plain'});
+
+    // write out numbers and calling out the function
+
+     writeNumber(res);
+     // timer to open file and read contents
+
+     setTimeout(function(){
+         console.log('opening ' + app);
+         // open and read the file contents
+         fs.readFile(app, 'utf8' function(err,data){
+            if(err)
+            res.write('Could not find or open file for reading\n');
+
+          else {
+              res.write(data);
+          }
+           res.end
+         });
+         // runs after 2 seconds
+     }), 2000);
+     // setting the port where it should listen to 
+}).listen(8125);
+
+console.log(you recreated and the severs should be running );
